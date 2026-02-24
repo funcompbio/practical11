@@ -19,18 +19,22 @@ the GitHub Copilot extension to Visual Studio Code</h1>
 <p>To add the GitHub Copilot extension to VS Code, follow these
 steps:</p>
 <ol type="1">
-<li>Open VS Code.</li>
-<li>Click on the Extensions icon in the left sidebar (or press
-<code>Ctrl+Shift+X</code>). <img src="img/VSC_GHC1.png" /></li>
-<li>In the search bar, type “GitHub Copilot” and press Enter, and once
-you see the GitHub Copilot extension in the search results, click on the
-<code>Install</code> button. <img src="img/VSC_GHC2.png" /></li>
-</ol>
+<li><p>Open VS Code.</p></li>
+<li><p>Click on the Extensions icon in the left sidebar (or press
+<code>Ctrl+Shift+X</code>).<br />
+  <br />
+   <img src="img/VSC_GHC1.png" /></p></li>
+<li><p>In the search bar, type “GitHub Copilot” and press Enter, and
+once you see the GitHub Copilot extension in the search results, click
+on the <code>Install</code> button.<br />
+  <br />
+   <img src="img/VSC_GHC2.png" /></p>
 <p>This will install in fact two extensions, GitHub Copilot and GitHub
 Copilot chat. The first one allows you to get in-line code suggestions
 as you type, while the second one is a conversational AI assistant that
 allows you to have a chat with GitHub Copilot to help you with your
-coding-specific tasks.</p>
+coding-specific tasks.</p></li>
+</ol>
 <h1 id="link-your-github-account-to-visual-studio-code">Link your GitHub
 account to Visual Studio Code</h1>
 <p>Once the GitHub Copilot extension is installed, you need to
@@ -44,25 +48,33 @@ steps:</p>
 <ol type="1">
 <li>Click on the GitHub Copilot icon in the bottom right corner of the
 VS Code window, and then click on
-<code>Sign in to use AI Features</code>. <img
-src="img/VSC_GHC3.png" /></li>
+<code>Sign in to use AI Features</code>.<br />
+  <br />
+   <img src="img/VSC_GHC3.png" /></li>
 <li>This will open a popup window in VS Code asking you about what
 option you want to use to sign in to your GitHub account. Click on
-<code>Continue with GitHub</code>. <img src="img/VSC_GHC4.png" /></li>
+<code>Continue with GitHub</code>.<br />
+  <br />
+   <img src="img/VSC_GHC4.png" /></li>
 <li>This will open a new browser window where you will be asked to sign
 in to your GitHub account, if you have not done it yet, and then
 authorise VS Code to access your GitHub account. Click on
-<code>Continue</code>. <img src="img/VSC_GHC5.png" /></li>
-<li>In the web page, you will be asked to authorise VS Code to access
-your GitHub account. Click on <code>Authorise Visual Studio Code</code>.
-<img src="img/VSC_GHC6.png" /></li>
+<code>Continue</code>.<br />
+  <br />
+   <img src="img/VSC_GHC5.png" /></li>
+<li>In the next web page, you will be asked to authorise VS Code to
+access your GitHub account. Click on
+<code>Authorise Visual Studio Code</code>.<br />
+  <br />
+   <img src="img/VSC_GHC6.png" /></li>
 <li>Once you have authorised VS Code to access your GitHub account, you
 should see a message in the web page saying
 <code>VS Code is now authorised to access your GitHub account</code>.
 You can now close the web page and go back to VS Code, where you may be
 asked whether you trust the authors of the files in this workspace.
-Click on <code>Trust Workspace &amp; Continue</code>. <img
-src="img/VSC_GHC7.png" /></li>
+Click on <code>Trust Workspace &amp; Continue</code>.<br />
+  <br />
+   <img src="img/VSC_GHC7.png" /></li>
 </ol>
 <h1 id="start-using-github-copilot">Start using GitHub Copilot</h1>
 <p>If you GitHub acccount is properly linked to VS Code, you should see
@@ -73,42 +85,61 @@ to the previous section and make sure you have properly linked your
 GitHub account to VS Code.</p>
 <p>Sometimes, the extensions may be installed and your GitHub account
 properly linked, but VS Code may ask you to either trust the current
-workspace/file that you have opened, or to click on the popup window
+workspace/file that you have opened, or to click a the popup window
 saying <code>Enable AI features</code>.</p>
 <p>To start using GitHub Copilot, open a new file in VS Code called
-<code>odd_even_numbes.py</code> and type the following two comment
-lines:</p>
+<code>odd_even_numbers.py</code>, <strong>in the
+<code>practical11</code> directory</strong>, and type the following two
+comment lines:</p>
 <pre><code>## write a program in Python that asks the user for an integer
 ## number and then prints out whether the number is odd or even.</code></pre>
 <p>As you type the second comment line, you should see a suggestion from
-GitHub Copilot appearing in light grey text, like in the image
-below.</p>
+GitHub Copilot appearing in light grey text, like in the image below.
+While the primary supported language for prompts and chatting with
+GitHub Copilot is English, you can also use other languages, such as
+Catalan or Spanish, so feel free to write the comments in any language
+you prefer.</p>
 <p><img src="img/VSC_GHC_odd_even1.png" /></p>
 <p>This suggestion is the code that GitHub Copilot thinks is the most
 likely to be what you want to write based on the comments you have
-written and the context of the file.</p>
-<p>To accept the suggestion, press the <code>Tab</code> key, and now
-save the file and run it in the shell to see that it works as
-expected.</p>
-<p><strong>Exercise</strong>: Using GitHub Copilot, write a Python
-program that asks the user for an integer number and then prints out
-whether the number is a perfect number or not. A perfect number is a
-positive integer that is equal to the sum of its proper divisors, i.e.,
-excluding itself from the sum. For example, 6 is a perfect number
-because its positive divisors are 1, 2, and 3, and their sum is 6.</p>
+written and the context of the file. To accept the suggestion, press the
+<code>Tab</code> key, and now save the file and run it in the shell to
+see that it works as expected.</p>
+<p><strong>Exercise</strong>: Open in VS Code a new file called
+<code>perfect_numbers.py</code> in the <code>practical10</code>
+directory and, using GitHub Copilot, write a Python program that asks
+the user for an integer number and then prints out whether the number is
+a perfect number or not. A perfect number is a positive integer that is
+equal to the sum of its proper divisors, i.e., excluding itself from the
+sum. For example, 6 is a perfect number because its positive divisors
+are 1, 2, and 3, and their sum is 6. Once the program is ready, save the
+file and run it in the shell to see that it works as expected.</p>
+<h2 id="modifying-code-with-github-copilot-chat">Modifying code with
+GitHub Copilot Chat</h2>
+<p>Open the Copilot Chat extension (clicking on the right of the search
+text box) and ask GitHub Copilot to modify the
+<code>perfect_numbers.py</code> program to take the input number from
+the command line instead of asking the user for it, by typing the
+following prompt in the chat window:</p>
+<pre><code>modify this program to take the input number from the command line instead of
+asking the user for it.</code></pre>
+<p>After some thinking, GitHub Copilot will suggest a modified version
+of the program, and you can accept the suggestion by clicking on the
+<code>Allow</code> button shown in the image below.</p>
+<p><img src="img/VSC_GHC_modify_perfect1.png" /></p>
+<p>GitHub Copilot will modify the program as you have asked, and will
+give you the option to keep the modified code or undo the suggested
+edits. Click on the button <code>Keep</code> shown in the image
+below.</p>
+<p><img src="img/VSC_GHC_modify_perfect2.png" /></p>
+<p>Now save the file, go to the Unix command line and verify that the
+modified program works as expected by calling it as follows:</p>
+<pre><code>$ python perfect_numbers.py 6</code></pre>
 <h2 id="how-to-get-explanations-from-github-copilot">How to get
 explanations from GitHub Copilot</h2>
-<p>Open a new file in VS Code called <code>prime_numbers.py</code> and
-type the following comment line:</p>
-<pre><code>## write a program in Python that asks the user for an integer
-## number and then prints out whether the number is prime or not.</code></pre>
-<p>As you type the second comment line, you should see a suggestion from
-GitHub Copilot appearing in light grey text consisting of a single line
-of code, press tab to accept it. A second line will be suggested, press
-tab to accept it, and so on until you see two yellow stars appearing
-next to the one of the suggested lines, as in the image below. Click on
-the yellow stars, and then click on the option <code>Explain</code>.</p>
-<p><img src="img/VSC_GHC_prime1.png" /></p>
-<p>Try to understand the explanation given by GitHub Copilot and then
-accept the rest of the suggested code. Run the program to see that it
-works as expected.</p>
+<p>GitHub Copilot can also provide explanations for the code it
+suggests. For instance, in the previous example, type in the Copilot
+Chat window the following prompt, selecting the first option that
+appears in the dropdown menu as shown in the image below.:</p>
+<pre><code>/explain the function is_perfect_number</code></pre>
+<p><img src="img/VSC_GHC_explain_perfect.png" /></p>

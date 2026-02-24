@@ -245,3 +245,8 @@ the command line and prints out whether the number is prime or not.
 `my_first_python_programs` directory and, using GitHub Copilot, write a Python
 program that takes two numbers from the command line and prints out whether they
 are relatively primes or not.
+
+# Using GitHub Copilot with R and RStudio
+
+In this [link](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html)
+you can find instructions on how to use GitHub Copilot with R and RStudio.

@@ -125,7 +125,7 @@ example, 6 is a perfect number because its positive divisors are 1, 2, and 3,
 and their sum is 6. Once the program is ready, save the file and run it in the
 shell to see that it works as expected.
 
-## Modifying code with GitHub Copilot Chat
+# Modifying code with GitHub Copilot Chat
 
 Open the Copilot Chat extension (clicking on the right of the
 search text box) and ask GitHub Copilot to modify the `perfect_numbers.py`
@@ -155,7 +155,7 @@ works as expected by calling it as follows:
 $ python perfect_numbers.py 6
 ```
 
-## How to get explanations from GitHub Copilot
+# How to get explanations from GitHub Copilot
 
 GitHub Copilot can also provide explanations for the code it suggests. For
 instance, in the previous example, type in the Copilot Chat window the following
@@ -167,3 +167,81 @@ in the image below.:
 ```
 
 ![](img/VSC_GHC_explain_perfect.png)
+
+# How to give context to GitHub Copilot
+
+**Before we start this section, close all files you have opened in VS Code, and
+close VS Code itself.**
+
+To get suggestions from GitHub Copilot adapted to your needs, you should give it
+context about what you want to do and how you want to do it. The first step to
+enable GitHub Copilot to learn the context in which you want to work is to create
+a directory specific for the project you want to work on, and then open that
+directory with VS Code. For instance, let's say we want to learn how to write simple
+programs in Python using only while and if statements, avoiding the use of the
+`range()` function and the `+=` adding notation. Let's create a directory called
+`my_first_python_programs` **outside** the `practical11` directory, and then open that directory with VS Code by typing on the shell:
+
+```
+$ code my_first_python_programs
+```
+VS Code will ask you whether you trust the authors of the files in this directory, and you should click on `Yes, I trust the authors` as shown in the image below.
+
+![](img/VSC_GHC_context1.png)
+
+Now, open the GitHub Copilot Chat extension and type the following prompt in
+the chat window and press `Enter`.
+
+```
+/init help writing simple programs in Python to learn programming, using only
+while and if statements, avoid using the range() function and the += adding
+notation. Write code outside a function.
+```
+
+VS Code will start scanning the files in the directory, which is empty, and will
+ask you whether it should scan other files in your system, click on `Skip` as shown in
+the image below.
+
+![](img/VSC_GHC_context2.png)
+
+GitHub Copilot should have created a hidden directory called `.github`
+with a Markdown file called `copilot-instructions.md` in it, and will ask you
+whether you want to keep that file, click on `Keep` as shown in the image below.
+
+![](img/VSC_GHC_context3.png)
+
+Using the file explorer on the left, navigate to the file `copilot-instructions.md` and
+open it to see the first draft of the instructions that GitHub Copilot has created for
+you. You should see something similar to the image below.
+
+![](img/VSC_GHC_context4.png)
+
+To see how GitHub Copilot uses these instructions, create a new file called
+`perfect_numbers.py` in the `my_first_python_programs` directory and type the
+following comment line in it:
+
+```
+## write a Python program that asks the user to enter an integer number
+## and prints out whether the number is perfect or not.
+```
+As you type the second comment line, you should see a suggestion from GitHub
+Copilot appearing in light grey text, like in the image below, with a yellow
+stars icon next to it, click on it and select the option `Fix` as shown in the
+image below.
+
+![](img/VSC_GHC_context5.png)
+
+Finally, you should see that the code suggestion from GitHub Copilot has been
+modified to adapt to the context you have given it, and now it uses only while and
+if statements, and does not use the `range()` function or the `+=` adding notation, as shown in the image below. Click on the `Keep` button to keep the modified code.
+
+![](img/VSC_GHC_context6.png)
+
+**Exercise**: Create a new file called `prime_numbers.py` in the `my_first_python_programs`
+directory and, using GitHub Copilot, write a Python program that takes a number from
+the command line and prints out whether the number is prime or not.
+
+**Exercise**: Create a new file called `relatively_primes.py` in the
+`my_first_python_programs` directory and, using GitHub Copilot, write a Python
+program that takes two numbers from the command line and prints out whether they
+are relatively primes or not.

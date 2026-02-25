@@ -210,6 +210,14 @@ whether you want to keep that file, click on `Keep` as shown in the image below.
 
 ![](img/VSC_GHC_context3.png)
 
+If somehow, VS Code has **not** created the hidden directory `.github` with the file
+`copilot-instructions.md` in it, then type in the Copilot chat window the following
+prompt and press `Enter`:
+
+```
+create a .github directory containing the copilot-instructions.md with that information
+```
+
 Using the file explorer on the left, navigate to the file `copilot-instructions.md` and
 open it to see the first draft of the instructions that GitHub Copilot has created for
 you. You should see something similar to the image below.
@@ -222,20 +230,34 @@ following comment line in it:
 
 ```
 ## write a Python program that asks the user to enter an integer number
-## and prints out whether the number is perfect or not.
+## and prints out whether the number is perfect or not
 ```
-As you type the second comment line, you should see a suggestion from GitHub
-Copilot appearing in light grey text, like in the image below, with a yellow
-stars icon next to it, click on it and select the option `Fix` as shown in the
-image below.
+At the end of the second comment line that you have just typed, Copilot may
+keep suggesting further instructions, disregard them and press `Enter` to
+go to the next line. Then, you should see a first line of code suggested by
+GitHub Copilot, press `Tab` to accept the suggestion, and a multiple-line code
+chunk will be suggested by GitHub Copilot, which may not be adapted to the context
+you have given it. In this situation, hover the mouse over the suggested code and
+you should see a popup window starting with `< 1/2 >`, click on the right bracket
+`>` to see the next suggestion, as shown in the image below.
 
 ![](img/VSC_GHC_context5.png)
 
-Finally, you should see that the code suggestion from GitHub Copilot has been
-modified to adapt to the context you have given it, and now it uses only while and
-if statements, and does not use the `range()` function or the `+=` adding notation, as shown in the image below. Click on the `Keep` button to keep the modified code.
+You should obtain a second chunk of suggested code, this time adapted to the
+context specified in the Markdown file `copilot-instructions.md`, using only
+while and if statements, and without using the `range()` function or the `+=`
+adding notation, as shown in the image below. Click on the `Accept` button, or
+press the `Tab` key, to accept this second suggestion.
 
 ![](img/VSC_GHC_context6.png)
+
+If somehow, GitHub Copilot did not suggest a second code chunk adapted to the context,
+then type in the Copilot chat window the following prompt and press `Enter`:
+
+```
+you did not use the copilot-instructions.md
+```
+This time, GitHub Copilot should suggest a code chunk adapted to the context specified in the Markdown file `copilot-instructions.md`.
 
 **Exercise**: Create a new file called `prime_numbers.py` in the `my_first_python_programs`
 directory and, using GitHub Copilot, write a Python program that takes a number from

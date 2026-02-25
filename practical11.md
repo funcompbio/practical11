@@ -259,6 +259,10 @@ you did not use the copilot-instructions.md
 ```
 This time, GitHub Copilot should suggest a code chunk adapted to the context specified in the Markdown file `copilot-instructions.md`.
 
+You may find more comprehensive instructions on how to accept, reject or
+navigate through the suggestions from GitHub Copilot in VS Code in this
+[link](https://code.visualstudio.com/docs/copilot/ai-powered-suggestions).
+
 **Exercise**: Create a new file called `prime_numbers.py` in the `my_first_python_programs`
 directory and, using GitHub Copilot, write a Python program that takes a number from
 the command line and prints out whether the number is prime or not.
